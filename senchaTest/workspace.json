@@ -1,0 +1,115 @@
+{
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "name": "SenchaTest",
+    "tests": {
+        "path": "test/project.json",
+        "browser": {
+            "farms": [
+                {
+                    "name": "webdriver",
+                    "type": "generic",
+                    "host": "localhost",
+                    "port": 4444,
+                    "sessionLimit": 10,
+                    "autoStartTunnel": false,
+                    "pools": [
+                        {
+                            "name": "localPoolWin",
+                            "path": "pools/localPool.json"
+                        }
+                    ]
+                },
+                {
+                    "name": "saucelabs",
+                    "type": "saucelabs",
+                    "host": "ondemand.saucelabs.com",
+                    "port": 80,
+                    "username": "div1112",
+                    "accessKey": "cca966d9-ba5f-4f6b-a65c-81b70215b4fc",
+                    "sessionLimit": 4,
+                    "pools": [
+                        {
+                            "name": "saucePool",
+                            "path": "pools/saucePool.json"
+                        },
+                        {
+                            "name": "nightlySaucePool",
+                            "path": "pools/nightlySaucePool.json"
+                        },
+                        {
+                            "name": "tcPool",
+                            "path": "pools/tcPool.json"
+                        },
+                        {
+                            "name": "Sencha Supported Browsers",
+                            "path": "pools/Sencha Supported Browsers.json"
+                        },
+                        {
+                            "name": "no-pool",
+                            "path": "pools/no-pool.json"
+                        },
+                        {
+                            "name": "Modern Browsers",
+                            "path": "pools/Modern Browsers.json"
+                        },
+                        {
+                            "name": "win-chrome",
+                            "path": "pools/win-chrome.json"
+                        },
+                        {
+                            "name": "win-ie",
+                            "path": "pools/win-ie.json"
+                        },
+                        {
+                            "name": "mac-chrome",
+                            "path": "pools/mac-chrome.json"
+                        },
+                        {
+                            "name": "mac-ipad",
+                            "path": "pools/mac-ipad.json"
+                        },
+                        {
+                            "name": "mac-iphone",
+                            "path": "pools/mac-iphone.json"
+                        }
+                    ]
+                },
+                {
+                    "name": "BrowserStack",
+                    "type": "browserstack",
+                    "port": 80,
+                    "host": "hub.browserstack.com",
+                    "username": "divyansh33",
+                    "accessKey": "NyzzXGLt41kazEwBWYbQ",
+                    "sessionLimit": 2,
+                    "pools": [
+                        {
+                            "name": "browserstack",
+                            "path": "browserstack.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "archiveRoot": "/modernKS",
+        "archiveServer": "http://10.0.11.38:1903",
+        "archiveServers": [
+            {
+                "server": "http://10.0.11.38:1903",
+                "archiveRoot": "/modernKS",
+                "label": "http://10.0.11.38:1903"
+            },
+            {
+                "server": "http://se.sencha.com:8020",
+                "archiveRoot": "/SDKTest",
+                "label": "se.sencha.com"
+            }
+        ]
+    }
+}

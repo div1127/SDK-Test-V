@@ -1,0 +1,23 @@
+[
+    {
+        "browserName": "firefox",
+        "platform": "WINDOWS",
+        "sencha": {
+            "concurrency": 1
+        }
+    },
+    {
+        "browserName": "chrome",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "WINDOWS"
+    },
+    {
+        "browserName": "internet explorer",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "WINDOWS"
+    }
+]

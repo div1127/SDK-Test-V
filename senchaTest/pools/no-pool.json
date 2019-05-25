@@ -1,0 +1,10 @@
+[
+    {
+        "browserName": "firefox",
+        "version": "64",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14"
+    }
+]

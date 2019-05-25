@@ -1,0 +1,48 @@
+[
+    {
+        "browserName": "firefox",
+        "version": "50",
+        "sencha": {
+            "concurrency": 1
+        },   
+		"tunnelIdentifier": "teamcityTunnel",
+		"name": "tc"
+    },
+    {
+        "browserName": "chrome",
+        "version": "55",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",   
+		"tunnelIdentifier": "teamcityTunnel",
+		"name": "tc"
+    },
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 1
+        },   
+		"tunnelIdentifier": "teamcityTunnel",
+		"name": "tc"
+    },
+    {
+        "browserName": "microsoftedge",
+        "version": "14",
+        "sencha": {
+            "concurrency": 1
+        },   
+		"tunnelIdentifier": "teamcityTunnel",
+		"name": "tc"
+    },
+    {
+        "browserName": "safari",
+        "version": "10",
+        "sencha": {
+            "concurrency": 1
+        },   
+		"tunnelIdentifier": "teamcityTunnel",
+		"name": "tc"
+    }
+]

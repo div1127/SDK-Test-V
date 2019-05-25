@@ -1,0 +1,10 @@
+[
+    {
+        "browser": "chrome",
+        "browser_version": "73.0",
+        "browserstack.local": false,
+        "sencha": {
+            "concurrency": 1
+        }
+    }
+]

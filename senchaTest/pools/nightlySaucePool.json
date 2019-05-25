@@ -1,0 +1,38 @@
+[
+  {
+    "browserName": "chrome",
+    "version": "latest",
+    "sencha": {
+      "concurrency": 4
+    },
+    "platform": "Windows 10",
+    "tunnelIdentifier": "teamcityTunnel"
+  },
+  {
+    "browserName": "firefox",
+    "version": "latest",
+    "sencha": {
+      "concurrency": 4
+    },
+    "platform": "Windows 10",
+    "tunnelIdentifier": "teamcityTunnel"
+  },
+  {
+    "browserName": "microsoftedge",
+    "version": "14.14393",
+    "sencha": {
+      "concurrency": 4
+    },
+    "platform": "Windows 10",
+    "tunnelIdentifier": "teamcityTunnel"
+  },
+  {
+    "browserName": "safari",
+    "version": "10.0",
+    "sencha": {
+      "concurrency": 4
+    },
+    "platform": "OS X 10.11",
+    "tunnelIdentifier": "teamcityTunnel"
+  }
+]

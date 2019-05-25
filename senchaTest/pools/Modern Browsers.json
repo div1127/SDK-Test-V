@@ -1,0 +1,56 @@
+[
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 4
+        },
+        "platform": "Windows 10",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "18",
+        "sencha": {
+            "concurrency": 4
+        },
+        "platform": "Windows 10",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 4
+        },
+        "platform": "Windows 10",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "ipad",
+        "version": "12.0",
+        "sencha": {
+            "concurrency": 4
+        },
+        "platform": "Mac 10.13",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "iphone",
+        "version": "12.0",
+        "sencha": {
+            "concurrency": 4
+        },
+        "platform": "Mac 10.13",
+        "tunnelIdentifier": "SenchaTest"
+    }
+]

@@ -1,0 +1,235 @@
+/********************
+ * @file Buttons.js
+ * @author 6.2.x - Petr Bahr
+ *         6.5.x - Martin Prokes
+ * Buttons
+ *
+ * Tested on : Chrome, FF, IE11, Edge, Android 6 tablet, iOS tablet, Android 6 phone, WP10
+ * Passed on : Chrome, FF, IE11, Edge, Android 6 tablet, iOS tablet, Android 6 phone, WP10
+ *
+ * Known ST issues :
+ * ORION-1506 - need to use check methods on comboboxes instead of real click();
+ * ORION-388 - fails to click on menu items - using pending to hide this ST failure
+ *
+ ********************/
+
+describe("Buttons", function () {
+
+    var prefix = '#kitchensink-view-buttons-buttons ';
+    var buttons = ['action', 'alt', 'confirm', 'decline' ];
+    var checkboxes = ['action', 'alt', 'confirm', 'decline', 'action', 'round'];
+    var classes = [ 'x-component-action', 'x-component-alt', 'x-component-confirm', 'x-component-decline'];
+
+    beforeAll(function () {
+        // redirect to page Components>Buttons
+        Lib.beforeAll("#buttons", prefix);
+    });
+    afterAll(function () {
+        Lib.afterAll(prefix);
+    });
+
+    var Buttons = {
+        getCB : function (value) {
+            return ST.checkBox(prefix + 'checkboxfield[value="' + value + '"]');
+        },
+        getBtn : function (text,ui) {
+            var locator = prefix + 'button[text='+text+']'+ (ui?'[_ui="' + ui + '"]':'');
+            return ST.button(locator);
+        },
+        resetCBs : function () {
+            for(var i = 0;i<checkboxes.length;i++){
+                Buttons.getCB(checkboxes[i])
+                    .uncheck();
+            }
+        },
+        buttonsClicking: function(button, checkbox, cls) {
+            it('' + button + ' button has correct class', function () {
+                Buttons.getCB(checkbox)
+                    .check() //using check() method instead of real click due to ORION-1506
+                    .checked();
+                Buttons.getBtn('Button',button)
+                    .visible()
+                    .hasCls(cls)
+                    .and(function(btn){
+                        expect(btn.hasCls(cls)).toBe(true);
+                    });
+            });
+        }
+
+    };
+
+    // buttons are loaded correctly
+    describe("Buttons are loaded correctly", function () {
+        it('buttons main page is loaded', function () {
+            Buttons.getBtn('Button')
+                .visible()
+                .and(function (component) {
+                    expect(component.isVisible()).toBeTruthy()
+                });
+        });
+        it('Screenshots should be same', function () {
+            Lib.screenshot('modern_buttons');
+        })
+    });
+
+    describe('Button click',function () {
+        Lib.testButtons(prefix,'Button');
+        Lib.testButtons(prefix,'Icon button');
+        Lib.testButtons(prefix,'Menu button');
+        Lib.testButtons(prefix,'Menu button with icon');
+    });
+
+    //Button UI's
+    describe('Button UIs', function () {
+        afterEach(Buttons.resetCBs);
+        describe("Check top 4 checkboxes", function () { // 5th button is combo of 2 buttons so its not included here in loop.
+            for ( var i = 0; i < buttons.length; i++) {
+                Buttons.buttonsClicking(buttons[i], checkboxes[i], classes[i]);
+            }
+        });
+
+        // 5th button test
+        describe("5th button test", function () {
+            it('5th button has correct class', function () {
+                Buttons.getCB('round')
+                    .check();
+                Buttons.getCB('action')
+                    .check();
+                Buttons.getBtn('Button', 'round action')
+                    .rendered()
+                    .hasCls('x-component-action x-button-round x-component-round');
+            });
+        });
+
+        // last combo - 3 buttons together
+        describe("UI combinations", function () {
+            it('should apply correct classes for Action, Alt and Round UIs', function () {
+                Buttons.getCB('action')
+                    .check();
+                Buttons.getCB('alt')
+                    .check();
+                Buttons.getCB('round')
+                    .check();
+                Buttons.getBtn('Button', 'action alt round')
+                    .visible()
+                    .hasCls('x-component-alt x-button-round x-component-round');
+            });
+        });
+    });
+    describe('Button state', function () {
+        afterEach(function () {
+            Buttons.getCB('disabled')
+                .uncheck();
+        });
+        beforeEach(function () {
+            Buttons.getCB('disabled')
+                .check()
+                .checked();
+        });
+        it('should disable all buttons', function () {
+            Buttons.getBtn('Button')
+                .disabled()
+                .and(function (btn) {
+                    expect(btn.isDisabled()).toBe(true);
+                })
+        });
+        it('should not be able to open menu when button is disabled', function () {
+            Buttons.getBtn('Menu button')
+                .click()
+                .and(function(btn){
+                    var menu = btn.getMenu();
+                    expect(menu.isVisible()).toBe(false);
+                });
+        });
+    });
+    describe('Button menu', function () {
+        //make sure all menus are hidden after each test
+        afterEach(function () {
+            var menus = Ext.ComponentQuery.query('menu');
+            menus.forEach(function (menu) {
+                menu.hide();
+            });
+        });
+        it('should show menu when clicked on Menu button', function () {
+            Buttons.getBtn('Menu button')
+                .click()
+                .wait(function(btn){
+                    var menu = btn.getMenu();
+                    return menu.isVisible();
+                })
+                .and(function(btn){
+                    var menu = btn.getMenu();
+                    expect(menu.isVisible()).toBe(true);
+                });
+            if(!Lib.isDesktop){
+                pending('Failing to open menu on touch devices due to ORION-1506');
+            }
+        });
+        it('should show menu when clicked on Menu button with icon', function () {
+            Buttons.getBtn('Menu button with icon')
+                .click()
+                .wait(function(btn){
+                    var menu = btn.getMenu();
+                    return menu.isVisible();
+                })
+                .and(function(btn){
+                    var menu = btn.getMenu();
+                    expect(menu.isVisible()).toBe(true);
+                });
+            if(!Lib.isDesktop){
+                pending('Failing to open menu on touch devices due to ORION-1506');
+            }
+        });
+        describe('click menu items', function () {
+            var btn, btnMenu;
+            beforeEach(function () {
+                Buttons.getBtn('Menu button')
+                    .visible()
+                    .and(function (button) {
+                        btn = button;
+                        btnMenu = btn.getMenu();
+                    })
+                    .click();
+
+            });
+            it('should show menu when clicked on Menu button', function () {
+                Buttons.getBtn('Menu button')
+                    .and(function () {
+                        expect(btnMenu.isVisible()).toBe(true);
+                    });
+                if(!Lib.isDesktop){
+                    pending('Failing to open menu on touch devices due to ORION-1506');
+                }
+            });
+            it('should hide menu when clicked on Search menuitem', function () {
+                    ST.component('menu{isVisible()} menuitem[text=Search]')
+                        .visible()
+                        .click()
+                        .hidden()
+                        .and(function () {
+                            expect(btnMenu.isVisible()).toBe(false);
+                        });
+                if(Lib.isTouch()){
+                    pending('Failing to click menuitems on touch devices due to ORION-388');
+                }
+            });
+            it('should hide menu when clicked on another button', function () {
+                if(Lib.isTouch()){
+                    pending('Failing to click menuitems on touch devices due to ORION-388');
+                }
+                ST.component('menu{isVisible()} menuitem[text=Search]')
+                    .visible();
+                Buttons.getBtn('Button')
+                    .click()
+                    .and(function () {
+                        expect(btnMenu.isVisible()).toBe(false);
+                    });
+            });
+        });
+    });
+    describe('Source code', function(){
+        it('should open, check and close', function(){
+            Lib.sourceClick('Button');
+        });
+    });
+});

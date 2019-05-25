@@ -1,0 +1,11 @@
+[
+    {
+        "browserName": "ipad",
+        "version": "12.0",
+        "sencha": {
+            "concurrency": 2
+        },
+        "platform": "Mac 10.13",
+        "tunnelIdentifier": "SenchaTest"
+    }
+]

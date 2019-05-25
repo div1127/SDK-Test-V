@@ -1,0 +1,11 @@
+[
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 2
+        },
+        "platform": "Windows 10",
+        "tunnelIdentifier": "SenchaTest"
+    }
+]

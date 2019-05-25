@@ -1,0 +1,19 @@
+dist: xenial
+language: node_js
+node_js:
+- '10'
+
+
+addons:
+  sauce_connect:
+    username: "div1112"
+    access_key: "cca966d9-ba5f-4f6b-a65c-81b70215b4fc"
+
+    
+before_script:
+         - scripts/SenchaTest-2.2.1-linux-x64-no-jre.sh < scripts/inputs-stc-cli.txt
+         - scripts/SenchaCmd-6.7.0.63-linux-amd64.sh < scripts/inputs-stc-cmd.txt
+         - sleep 9
+         - cd senchaTest
+         - export PATH=$PATH:/usr/local/Sencha/Test/2_2_1_83/stc
+         -  /home/travis/Sencha/Test/2_2_1_83/stc/stc run -p saucePool -s "test/modern/smoke/KitchenSink/Components/Media"

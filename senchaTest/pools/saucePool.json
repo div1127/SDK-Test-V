@@ -1,0 +1,10 @@
+[
+    {
+        "browserName": "chrome",
+        "version": "74",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10"
+    }
+]

@@ -1,0 +1,602 @@
+[
+    {
+        "browserName": "chrome",
+        "version": "57",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "57",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "58",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "58",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "59",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "59",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "60",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "60",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "61",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "61",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "62",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "62",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "63",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "63",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "64",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "64",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "65",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "65",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "66",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "66",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "67",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "67",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "68",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "68",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "69",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "69",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "70",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "70",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "chrome",
+        "version": "71",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "13",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "14",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "15",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "16",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "17",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "version": "18",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "45",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "46",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "47",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "48",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "49",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "50",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "51",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "52",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "53",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "54",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "55",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "56",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "57",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "58",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "59",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "60",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "61",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "62",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "63",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "firefox",
+        "version": "64",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.14",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 10",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 2008",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    },
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Windows 2012 R2",
+        "screenResolution": "1024x768",
+        "tunnelIdentifier": "SenchaTest"
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "browserName": "internet explorer",
+        "version": "11",
+        "sencha": {
+            "concurrency": 2
+        },
+        "platform": "Windows 10",
+        "tunnelIdentifier": "SenchaTest"
+    }
+]
