@@ -1,7 +1,7 @@
 # SDK-Test-V
 
 
-## How-To run tests
+### How-To run tests
 
 > *Note that this guide is not for development purposes*
 
